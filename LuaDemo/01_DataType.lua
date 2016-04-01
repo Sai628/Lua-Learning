@@ -11,7 +11,6 @@ print()
 
 
 -- nil
-print("--nil")
 print(type(a))
 
 tab1 = {key1 = "val1", key2 = "val2", "val3"}
@@ -28,7 +27,6 @@ print()
 
 
 -- boolean
-print("--boolean")
 print(type(true))
 print(type(false))
 print(type(nil))
@@ -43,7 +41,6 @@ print()
 
 
 -- number
-print("--number")
 print(type(2))
 print(type(2.2))
 print(type(0.2))
@@ -55,7 +52,6 @@ print()
 
 
 -- string
-print("--string")
 string1 = "this is string1"
 string2 = "this is string2"
 
@@ -84,7 +80,6 @@ print()
 
 
 -- table
-print("--table")
 local tbl1 = {}
 for i=1,10 do
     tbl1[i] = i
