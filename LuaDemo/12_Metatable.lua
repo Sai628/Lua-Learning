@@ -8,23 +8,23 @@ mytable = setmetatable({key1 = "value1"}, {
         end
     end
 })
-print(mytable.key1, mytable.key2)  --value1	metatablevalue
+print(mytable.key1, mytable.key2)  -- value1	metatablevalue
 
 
 mytable2 = setmetatable({key1 = "value1"}, {__index = {key2 = "metatablevalue"}})
-print(mytable2.key1, mytable2.key2)  --value1	metatablevalue
+print(mytable2.key1, mytable2.key2)  -- value1	metatablevalue
 
 
 -- __newindex
 mymetatable = {}
 mytable = setmetatable({key1 = "value1"}, {__newindex = mymetatable})
-print(mytable.key1)  --value1
+print(mytable.key1)  -- value1
 
 mytable.newkey = "new key"
-print(mytable.newkey, mymetatable.newkey)  --nil	new key
+print(mytable.newkey, mymetatable.newkey)  -- nil	new key
 
 mytable.key1 = "new key1"
-print(mytable.key1, mymetatable.key1)  --new key1	nil
+print(mytable.key1, mymetatable.key1)  -- new key1	nil
 
 
 mytable = setmetatable({key1 = "value1"}, {
@@ -35,7 +35,7 @@ mytable = setmetatable({key1 = "value1"}, {
 mytable.key1 = "new value"
 mytable.key2 = 4
 
-print(mytable.key1, mytable.key2)  --new value	"4"
+print(mytable.key1, mytable.key2)  -- new value	"4"
 
 
 -- __add
@@ -66,12 +66,12 @@ mytable = mytable + secondtable
 for i,v in ipairs(mytable) do
     print(i,v)
 end
---1	1
---2	2
---3	3
---4	4
---5	5
---6	6
+-- 1	1
+-- 2	2
+-- 3	3
+-- 4	4
+-- 5	5
+-- 6	6
 
 
 -- __call
@@ -91,7 +91,7 @@ mytable = setmetatable({10}, {
     end
 })
 newtable = {10, 20, 30}
-print(mytable(newtable))  --70
+print(mytable(newtable))  -- 70
 
 
 -- __tostring
@@ -105,4 +105,4 @@ mytable = setmetatable({10, 20, 30}, {
         return "the sum of all elements in table is:"..sum
     end
 })
-print(mytable)  --the sum of all elements in table is:60
+print(mytable)  -- the sum of all elements in table is:60

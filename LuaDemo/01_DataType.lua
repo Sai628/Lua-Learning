@@ -69,7 +69,7 @@ print("2" + 6)
 print("2" + "6")
 print("2 + 6")
 print("-2e2" * "6")
---print("error" + 1) will execute error
+-- print("error" + 1) will execute error
 print("a" .. "b")
 print(157 .. 428)
 

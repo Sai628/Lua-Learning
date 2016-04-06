@@ -1,5 +1,5 @@
 
---[[function reture the max value between two numbers]]
+-- [[function reture the max value between two numbers]]
 function max(num1, num2)
     if num1 > num2 then
         result = num1
@@ -27,9 +27,9 @@ myprint(10)
 add(2, 5, myprint)
 
 
---multiple return values
+-- multiple return values
 startIndex, endIndex = string.find("www.github.com", "github")
-print(startIndex, endIndex)  --5 10
+print(startIndex, endIndex)  -- 5 10
 
 function maximum(a)
     local index = 1
@@ -45,10 +45,10 @@ function maximum(a)
     return m, index    
 end
 
-print(maximum({8, 10, 23, 12, 5}))  --23 3
+print(maximum({8, 10, 23, 12, 5}))  -- 23 3
 
 
---variable parameter
+-- variable parameter
 function average(...)
     result = 0
     local arg = {...}

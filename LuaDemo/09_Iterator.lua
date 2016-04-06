@@ -3,8 +3,8 @@ array = {"Lua", "Tutorial"}
 for i,v in ipairs(array) do
     print(i,v)
 end
---1	Lua
---2	Tutorial
+-- 1	Lua
+-- 2	Tutorial
 
 
 function square(iteratorMaxCount, currentNumber)
@@ -17,9 +17,9 @@ end
 for i,n in square, 3, 0 do
     print(i,n)
 end
---1	1
---2	4
---3	9
+-- 1	1
+-- 2	4
+-- 3	9
 
 
 function iter(a, i)
@@ -37,8 +37,8 @@ end
 for i,n in myipairs(array) do
     print(i, n)
 end
---1	Lua
---2	Tutorial
+-- 1	Lua
+-- 2	Tutorial
 
 
 function elementIterator(collection)
@@ -56,5 +56,5 @@ end
 for element in elementIterator(array) do
     print(element)
 end
---Lua
---Tutorial
+-- Lua
+-- Tutorial

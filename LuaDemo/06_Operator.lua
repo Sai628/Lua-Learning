@@ -1,31 +1,31 @@
 
---Arithmetic operator
+-- Arithmetic operator
 a = 21
 b = 10
 
 c = a + b
-print(c)  --31
+print(c)  -- 31
 
 c = a - b
-print(c)  --11
+print(c)  -- 11
 
 c = a * b
-print(c)  --210
+print(c)  -- 210
 
 c = a / b
-print(c)  --2.1
+print(c)  -- 2.1
 
 c = a % b
-print(c)  --1
+print(c)  -- 1
 
 c = a ^ 2
-print(c)  --441
+print(c)  -- 441
 
 c = -a
 print(c)  -- -21
 
 
---Relational operator
+-- Relational operator
 a = 21
 b = 10
 
@@ -63,7 +63,7 @@ if b >= a then
 end
 
 
---Logical operator
+-- Logical operator
 a = true
 b = true
 
@@ -91,17 +91,17 @@ else
 end
 
 
---Other operators
+-- Other operators
 a = "Hello "
 b = "Lua"
-print(a .. b)  --Hello Lua
+print(a .. b)  -- Hello Lua
 
-print("the length of 'b':", #b)  --3
-print("the length of 'Test' string:", #"Test")  --4
-print("the length of 'www.github.com'", #"www.github.com") --14
+print("the length of 'b':", #b)  -- 3
+print("the length of 'Test' string:", #"Test")  -- 4
+print("the length of 'www.github.com'", #"www.github.com") -- 14
 
 
---Operator priority
+-- Operator priority
 a = 20
 b = 10
 c = 15
