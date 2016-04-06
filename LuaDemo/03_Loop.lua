@@ -59,4 +59,3 @@ while (a < 20) do
         break
     end
 end
-

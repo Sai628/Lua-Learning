@@ -130,4 +130,3 @@ anonymous(tab, function(key, val)
 end)
 
 print()
-
